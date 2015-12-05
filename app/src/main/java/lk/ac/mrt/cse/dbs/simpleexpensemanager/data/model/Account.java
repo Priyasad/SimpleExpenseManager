@@ -20,10 +20,18 @@ package lk.ac.mrt.cse.dbs.simpleexpensemanager.data.model;
  * This POJO holds the information about an account.
  */
 public class Account {
+
     private String accountNo;
     private String bankName;
     private String accountHolderName;
     private double balance;
+
+    public Account(String accountNo, String bankName, String accountHolderName, double balance) {
+        this.accountNo = accountNo;
+        this.bankName = bankName;
+        this.accountHolderName = accountHolderName;
+        this.balance = balance;
+    }
 
     public String getAccountNo() {
         return accountNo;
@@ -57,10 +65,5 @@ public class Account {
         this.balance = balance;
     }
 
-    public Account(String accountNo, String bankName, String accountHolderName, double balance) {
-        this.accountNo = accountNo;
-        this.bankName = bankName;
-        this.accountHolderName = accountHolderName;
-        this.balance = balance;
-    }
+
 }
